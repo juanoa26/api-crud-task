@@ -58,5 +58,8 @@ public class TaskController {
         return ResponseEntity.notFound().build();
     }
 
-
+    @GetMapping("/categoria/{categoria}")
+    public List<Task> obtenerTareasPorCategoria(String categoria) {
+        return tareaRepository.findByCategoria(categoria);
+    }
 }

@@ -14,7 +14,7 @@ public class Task {
     private String titulo;
     private String fecha;
     private boolean completado;
-    
+    private String categoria;
     public Long getId() {
         return id;
     }
@@ -39,6 +39,15 @@ public class Task {
     public void setCompletado(boolean completado) {
         this.completado = completado;
     }
-
+    public String getCategoria() {
+        return categoria;
+    }
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
     
+    
+
+
+
 }
